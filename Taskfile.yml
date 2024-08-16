@@ -1,0 +1,15 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  APP_NAME: cloc-dir
+
+tasks:
+  default:
+    cmds:
+      - task: build
+  build:
+    cmds:
+      - goimports -w .
+      - go build -o {{.APP_NAME}}{{exeExt}} .
