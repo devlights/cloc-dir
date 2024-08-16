@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  download-cloc:
+    dir: cmd/cloc-dir
+    cmds:
+      - pwsh -c Invoke-WebRequest -Uri "https://github.com/AlDanial/cloc/releases/download/v2.02/cloc-2.02.exe" -OutFile "cloc.exe"

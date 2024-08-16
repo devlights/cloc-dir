@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  download-cloc:
+    dir: cmd/cloc-dir
+    cmds:
+      - wget https://github.com/AlDanial/cloc/releases/download/v2.02/cloc-2.02.tar.gz
+      - tar xzf cloc-2.02.tar.gz
+      - mv cloc-2.02/cloc .
+      - rm -rf cloc-2.02/ cloc-2.02.tar.gz
