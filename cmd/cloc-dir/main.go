@@ -31,7 +31,7 @@ func init() {
 	flag.StringVar(&args.dir, "dir", ".", "directory")
 	flag.StringVar(&args.sep, "sep", ",", "separator")
 	flag.StringVar(&args.lang, "lang", "C#", "Language")
-	flag.StringVar(&args.cloc, "cloc", "./cloc", "cloc executable path")
+	flag.StringVar(&args.cloc, "cloc", "cloc", "cloc executable path")
 }
 
 func main() {
